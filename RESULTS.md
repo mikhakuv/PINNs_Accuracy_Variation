@@ -62,7 +62,16 @@ $$rar = \frac{\max\limits_{x \in [x_0,x_1]} (\sqrt{u_{truth}(x,t_1)^2+v_{truth}(
 Обратим внимание на выражение $k^2-w$, которое обозначим как $\mu$. Видно, что от $\mu$ зависит амплитуда решения, а от $\sqrt{\mu}$ зависят показатели экспонент, определяющие как сильно будет меняться их значение при изменении $x$ и $t$. Поэтому при увеличении $\mu$ амплитуда решения будет увеличиваться, как и скорость изменения относительно $x$ и $t$.
 На графиках 2 и 3 показано, как меняется решение при изменении $\mu$:
 
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/pictures/results_chart2.PNG"></p>  
 
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/pictures/results_chart3.PNG"></p>  
+
+Предположения подтверждаются, видно как при увеличении $\mu$ возрастает амплитуда и уменьшается ширина пиков. Это делает функцию более сложной для аппроксимации и ошибка $mse_q$ возрастает, что и видно на графике 4 отображающем зависимость $mse_q(\mu)$:  
+
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/pictures/results_chart4.PNG"></p>  
+
+При этом зависимость $\mu$ от $k$ квадратичная с положительным знаком, а от $w$ линейная с отрицательным знаком, что и проясняет результаты, полученные на графике 1. 
+Тем не менее, $k$ и $w$ встречаются в выражении не только в составе $\mu$, но и по отдельности, что усложняет эффекты, возникающие при при их изменении и зависимость $mse_q$ от них не является линейной.  
 # Обзор Литературы  
 1. !!!статья с уравнением
 2. *Maziar Raissi, Paris Perdikaris, George Em Karniadakis* "Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations"
