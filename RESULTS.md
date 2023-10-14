@@ -51,7 +51,7 @@ $$rar = \frac{\max\limits_{x \in [x_0,x_1]} (\sqrt{u_{truth}(x,t_1)^2+v_{truth}(
 \end{table})
 -->
 В ячейках находятся названия соответствующих опытов из таблицы [performance_table(av).xlsx](https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/statistics/performance_table(av).xlsx)  
-На графике 1 изображена зависимость точности решения $mse_q$ от параметра $w$, разные кривые соответствуют разным значениям $k$:  
+На графике 1 изображена зависимость точности решения $mse_q$ от параметра $k$, разные кривые соответствуют разным значениям $w$:  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/pictures/results_chart1.PNG"><br><caption>График 1</caption></p>  
 
