@@ -48,7 +48,7 @@ $$rar = \frac{\max\limits_{x \in [x_0,x_1]} (\sqrt{u_{truth}(x,t_1)^2+v_{truth}(
         k=3,0 & exp(3, 1) & exp(3, 2) & exp(3, 3) \\ \hline
     \end{tabular}
 \end{table})  
-В ячейках находятся названия соответствующих опытов в таблице [performance_table(av).xlsx](https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/statistics/performance_table(av).xlsx)  
+В ячейках находятся названия соответствующих опытов из таблицы [performance_table(av).xlsx](https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/statistics/performance_table(av).xlsx)  
 На графике 1 изображена зависимость точности решения $mse_q$ от параметра $w$, разные кривые соответствуют разным значениям $k$:  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/pictures/results_chart1.PNG"><br><caption>График 1</caption></p>  
@@ -72,6 +72,12 @@ $$rar = \frac{\max\limits_{x \in [x_0,x_1]} (\sqrt{u_{truth}(x,t_1)^2+v_{truth}(
 
 При этом зависимость $\mu$ от $k$ квадратичная с положительным знаком, а от $w$ линейная с отрицательным знаком, что и проясняет результаты, полученные на графике 1: при увеличении $k$ существенно увеличивается $\mu$, а значит существенно уменьшается точность; при увеличении $w$ немного уменьшается $\mu$, а точность наоборот растёт.  
 Тем не менее, $k$ и $w$ встречаются в выражении не только в составе $\mu$, но и по отдельности, что усложняет эффекты, возникающие при при их изменении и зависимость $mse_q$ от них не является линейной.  
+
+Статистика по всем проведённым экспериментам и данные для построения графиков находятся в файлах:
+[performance_table(av).xlsx](https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/statistics/performance_table(av).xlsx),
+[amplitude_statistics.xlsx](https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/statistics/amplitude_statistics.xlsx)  
+### Вывод
+В данной работе изучалась зависимость точности получаемого с помощью PINN решения от коэффициентов $k$ и $w$ в начальном условии. Было получено, что при увеличении $k$ и уменьшении $w$ решение становится сложнее аппроксимировать и точность решения ожидаемо снижается.  
 # Обзор Литературы  
 1. !!!статья с уравнением
 2. *Maziar Raissi, Paris Perdikaris, George Em Karniadakis* "Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations"
