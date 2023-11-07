@@ -114,6 +114,14 @@ $Im(F(q,q_{t},q_{xx}))=u_t+v_xx+v*(u^2+v^2)(1-\alpha(u^2+v^2)+\beta(u^2+v^2)^2)$
 -->  
 Видно, что наибольший рост испытывает слагаемое $v*(u^2+v^2)(1-\alpha(u^2+v^2)+\beta(u^2+v^2)^2)$, которое при используемых в данной работе значениях коэффициентов принимает вид: $v*(u^2+v^2)$. Рост более чем пятикратный, остальные слагаемые тоже заметно увеличиваются. Вероятно это также осложняет процесс обучения и точность решения опять снижается.  
 
+
+Дополнительно можно рассмотреть поведение величин $L_1$ и $L_2$(!!!вписать их физический смысл!!!) при увеличении $\mu$. Они вычисляются по соответствующим формулам: 
+$L_1 = \int\limits_{x_0}^{x_1} (u^2+v^2)(x,t)dx, \quad L_2 = \int\limits_{x_0}^{x_1} (u v_x - u_x v)(x,t)dx$ и для правильного решения остаются постоянными при изменении $t$. На графике 7 изображена зависимость значений $L_1$ и $L_2$ от $\mu$:  
+
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/pictures/results_chart7.PNG"><br><caption>График 7</caption></p>  
+
+Зависимость не является линейной, ведь $k$ и $w$ встречаются в формуле решения не только в составе $\mu$, но явно видно, что при увеличении $\mu$ рассматриваемые величины также растут.
+
 Статистика по всем проведённым экспериментам и данные для построения графиков находятся в файлах:
 [performance_table(av).xlsx](https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/statistics/performance_table(av).xlsx),
 [amplitude_statistics.xlsx](https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/statistics/amplitude_statistics.xlsx)  
