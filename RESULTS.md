@@ -120,7 +120,7 @@ $L_1 = \int\limits_{x_0}^{x_1} (u^2+v^2)(x,t)dx, \quad L_2 = \int\limits_{x_0}^{
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/pictures/results_chart7.PNG"><br><caption>График 7</caption></p>  
 
-Зависимость не является линейной, ведь $k$ и $w$ встречаются в формуле решения не только в составе $\mu$, но явно видно, что при увеличении $\mu$ рассматриваемые величины также растут.
+Зависимость не является линейной, ведь $k$ и $w$ встречаются в формуле решения не только в составе $\mu$. Тем не менее, явно видно, что при увеличении $\mu$ рассматриваемые величины также растут. Можно даже заметить сходство уменьшения точности $mse_q$ на графике 5 и увеличение $L1$ и $L2$ на графике 7.
 
 Статистика по всем проведённым экспериментам и данные для построения графиков находятся в файлах:
 [performance_table(av).xlsx](https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/statistics/performance_table(av).xlsx),
