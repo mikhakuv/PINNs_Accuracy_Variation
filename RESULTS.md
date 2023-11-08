@@ -116,7 +116,7 @@ $Im(F(q,q_{t},q_{xx}))=u_t+v_xx+v*(u^2+v^2)(1-\alpha(u^2+v^2)+\beta(u^2+v^2)^2)$
 
 
 Дополнительно можно рассмотреть поведение величин $L_1$ и $L_2$(!!!вписать их физический смысл!!!) при увеличении $\mu$. Они вычисляются по соответствующим формулам: 
-$L_1 = \int\limits_{x_0}^{x_1} (u^2+v^2)(x,t)dx, \quad L_2 = \int\limits_{x_0}^{x_1} (u v_x - u_x v)(x,t)dx$ и для правильного решения остаются постоянными при изменении $t$. На графике 7 изображена зависимость значений $L_1$ и $L_2$ от $\mu$:  
+$L_1 = \int\limits_{-\infty}^{+\infty} (u^2+v^2)(x,t)dx, \quad L_2 = \int\limits_{-\infty}^{+\infty} (u v_x - u_x v)(x,t)dx$ и для правильного решения остаются постоянными при изменении $t$. На графике 7 изображена зависимость значений $L_1$ и $L_2$ от $\mu$:  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_Accuracy_Variation/blob/main/pictures/results_chart7.PNG"><br><caption>График 7</caption></p>  
 
